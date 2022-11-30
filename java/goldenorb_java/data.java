@@ -70,6 +70,7 @@ public class Data implements Serializable {
      *            New header name.
      */
     public void replaceHeader(String oldHeader, String newHeader) {
+        System.out.println("test");
         List<Object> tempList;
         int index = header.indexOf(oldHeader);
         header.set(index, newHeader);
