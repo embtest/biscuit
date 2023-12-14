@@ -252,6 +252,7 @@ namespace NadekoBot.Modules.Searches.Commands
                     msg = $":ok: I will notify this channel when status changes.\n{msg}";
                 await e.Channel.SendMessage(msg).ConfigureAwait(false);
                 config.ObservingStreams.Add(stream);
+                  await e.Channel.SendMessage(msg).ConfigureAwait(false);
             };
     }
 }
